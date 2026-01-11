@@ -7,7 +7,7 @@
 FROM broadinstitute/gatk:4.4.0.0
 
 # 메타데이터: 논문에 들어갈 저자 정보
-LABEL maintainer="Seon-Hoon Lee Lab"
+LABEL maintainer="H-Lee Lab"
 LABEL description="User-friendly WES pipeline for Thyroid & Parathyroid disorders"
 LABEL version="1.0"
 
@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     bwa \
     samtools \
     python3-pip \
+    trimmomatic \
     && apt-get clean
 
 # 3. 파이썬 분석 라이브러리 설치 (pandas, openpyxl 등 리포트 생성용)
