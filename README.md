@@ -5,6 +5,7 @@ This repository contains the clinician-friendly bioinformatics pipeline describe
 
 ## 1. Overview
 We developed a streamlined pipeline designed for endocrinologists to process WES raw data (FASTQ) and identify pathogenic variants in **25 key thyroid/parathyroid genes** 
+![ThyroScope Pipeline Diagram](canvas-image-1-1768740173287.png)
 
 ## 2. Repository Contents
 * `Dockerfile`: Contains the pre-built environment (BWA, GATK, Python).
