@@ -1,4 +1,4 @@
-# WES Pipeline for Thyroid & Parathyroid Disorders
+# ThyroScope: WES Pipeline for Thyroid & Parathyroid Disorders
 
 This repository contains the clinician-friendly bioinformatics pipeline described in the paper:
 > **"Comprehensive Genetic Diagnosis Pipeline for Thyroid and Parathyroid Disorders"**
