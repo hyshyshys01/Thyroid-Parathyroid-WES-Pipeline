@@ -210,4 +210,4 @@ If you use **ThyroScope** in your research, please cite the following paper:
 For technical support, bug reports, or collaboration inquiries, please contact:
 
 * **Developer:** Yun-seo Han ([yunseo21c@korea.ac.kr](mailto:yunseo21c@korea.ac.kr))
-* **Lab:** H-Lee Lab, Department of Life Sciences
+* **Lab:** H-Lee Lab([H-Lee Lab](http://hleelab.korea.ac.kr)), Department of Life Sciences
