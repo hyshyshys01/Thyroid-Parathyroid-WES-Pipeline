@@ -150,9 +150,8 @@ The **Clinical Report** is designed for immediate clinical interpretation. It ag
 
 If you encounter issues while running **ThyroScope**, check the solutions below for common problems.
 
----
 
-### 1. `is not a valid Windows path` Error ⚠️
+#### 1. `is not a valid Windows path` Error ⚠️
 
 **Problem:** This usually happens when running the `docker run` command in **PowerShell** using CMD-style syntax (`%cd%`).
 
@@ -160,9 +159,7 @@ If you encounter issues while running **ThyroScope**, check the solutions below 
   * *Example:* `-v "${PWD}\data:/data"`
 * **If using Command Prompt (CMD):** Keep using `%cd%`.
 
----
-
-### 2. `SnpEff database not found!` Error 📂
+#### 2. `SnpEff database not found!` Error 📂
 
 **Problem:** The pipeline cannot find the `hg38` database files inside the container.
 
@@ -170,9 +167,7 @@ If you encounter issues while running **ThyroScope**, check the solutions below 
 * **Match Docker Mount:** The Docker mount command `-v .../snpEff_db:/pipeline/snpEff/data` must match your actual host folder name **exactly** (case-sensitive).
 * **Verify Structure:** Ensure the `hg38` folder is located directly inside the `snpEff_db` folder on your host machine.
 
----
-
-### 3. `No input FASTQ files found` Error 🔍
+#### 3. `No input FASTQ files found` Error 🔍
 
 **Problem:** The pipeline script cannot detect your raw sequencing data.
 
@@ -180,9 +175,7 @@ If you encounter issues while running **ThyroScope**, check the solutions below 
   * *Example:* `Patient01_1.fq.gz`, `Patient01_2.fq.gz`
 * **Check Mounting:** Verify if the data folder is correctly mounted to the `/data` path in the Docker container.
 
----
-
-### 4. Memory/RAM Crash (GATK Errors) 💻
+#### 4. Memory/RAM Crash (GATK Errors) 💻
 
 **Problem:** `GATK HaplotypeCaller` or `SnpEff` may crash if Docker is not allocated enough RAM.
 
